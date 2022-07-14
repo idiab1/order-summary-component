@@ -1,0 +1,124 @@
+/* Global Rules */
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+}
+body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+/* End of Global Rules */
+
+/* Main */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background: url("../image/pattern-background-desktop.svg") no-repeat;
+    background-color: var(--pale-blue);
+}
+
+/* End of Main */
+
+/* Card */
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0px rgb(245 247 255 / 30%);
+}
+.card .card-body h1{
+    font-weight: 900;
+    font-size: 1.35rem;
+    margin-bottom: 0.8rem;
+    text-transform: capitalize;
+    color: var(--dark-blue);
+}
+.card .card-body{
+    padding: 2rem;
+}
+.card .card-body p{
+    font-size: .87rem;
+    line-height: 1.5;
+    font-weight: initial;
+    color: var(--desaturated-blue);
+}
+.card .card-body .price-details{
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--very-pale-blue);
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card .card-body .price-details .price{
+    margin-left: 10px;
+}
+.card .card-body .price-details .price p{
+    color: #000;
+    font-weight: 700;
+}
+.card .card-body .price-details .price span{
+    font-size: .8rem;
+    color: hsl(224, 23%, 55%);
+}
+.card .card-body .price-details .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-body .price-details .info a{
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: .9rem;
+}
+.card .card-body .price-details .info a:hover{
+    text-decoration: none;
+    color: hsl(245deg 83% 68%);
+}
+.card .card-body .btn-payment{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--bright-blue);
+    padding: 0.6rem;
+    color: #fff;
+    font-size: .85rem;
+    margin-bottom: 0.9rem;
+    box-shadow: 0px 5px 8px 2px hsl(245deg 75% 52% / 27%);
+}
+.card .card-body .btn-payment:hover{
+    background-color: hsl(245deg 83% 68%);
+}
+.card .card-body .btn-cancel{
+    font-weight: 700;
+    font-size: .8rem;
+    color: var(--desaturated-blue);
+}
+.card .card-body .btn-cancel:hover{
+    color: var(--dark-blue);
+}
+/* End of Card */
+
+.card .card-body .price-details .info a,
+.card .card-body .btn-payment,
+.card .card-body .btn-cancel{
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+}
